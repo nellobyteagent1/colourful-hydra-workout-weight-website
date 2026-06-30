@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hydra | Workout and Weight-Loss Guidance</title>
+    <meta
+      name="description"
+      content="Hydra is a colourful landing experience for workout guidance, weight-loss tips, and calm audio-led support."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero panel">
+        <div class="hero-copy">
+          <p class="eyebrow">Hydra wellness studio</p>
+          <h1>
+            Colourful
+            <span>workout guidance</span>
+            for steady strength and weight-loss rhythm.
+          </h1>
+          <p class="lede">
+            Hydra combines approachable training structure, realistic nutrition support,
+            and calming audio rituals so your routine feels energised instead of overwhelming.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#guidance" class="primary-action">Explore guidance</a>
+            <a href="#audio" class="secondary-action">Start audio reset</a>
+          </div>
+
+          <div class="stat-row">
+            <article class="stat">
+              <strong>4</strong>
+              <span>movement pillars</span>
+            </article>
+            <article class="stat">
+              <strong>12 min</strong>
+              <span>minimum daily reset</span>
+            </article>
+            <article class="stat">
+              <strong>3</strong>
+              <span>weight-loss habits to stack</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="hero-card glass">
+            <span class="hero-card-label">Daily Hydra flow</span>
+            <h2>Move with intention. Eat with clarity. Recover with calm.</h2>
+            <ul>
+              <li>Strength circuits with mobility built in</li>
+              <li>Weight-loss tips grounded in repeatable habits</li>
+              <li>Audio guidance for focus and recovery</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="guidance" class="content-grid">
+        <article class="panel section-card">
+          <div class="section-heading">
+            <p class="eyebrow">Workout guidance</p>
+            <h2>Training pillars that keep progress visible and sustainable.</h2>
+          </div>
+          <div class="card-stack">
+            <article class="info-card coral">
+              <h3>Strength Rhythm</h3>
+              <p>Alternate lower body power, upper body push, and core control through 30-minute circuits built for sustainable progression.</p>
+            </article>
+            <article class="info-card aqua">
+              <h3>Mobility Recovery</h3>
+              <p>Start and finish with shoulder, hip, and ankle flows so each workout improves range of motion instead of just burning effort.</p>
+            </article>
+            <article class="info-card gold">
+              <h3>Cardio Balance</h3>
+              <p>Blend one higher-intensity interval block with two low-impact conditioning sessions to support stamina without draining recovery.</p>
+            </article>
+          </div>
+        </article>
+
+        <article class="panel section-card">
+          <div class="section-heading">
+            <p class="eyebrow">Weight-loss tips</p>
+            <h2>Simple nutrition habits that support energy while trimming excess.</h2>
+          </div>
+          <div class="card-stack">
+            <article class="info-card sky">
+              <h3>Protein First Plates</h3>
+              <p>Build meals around lean protein, fiber-rich vegetables, and slow carbohydrates so hunger stays quieter through the afternoon.</p>
+            </article>
+            <article class="info-card aqua">
+              <h3>Hydration Anchors</h3>
+              <p>Use a morning glass, a pre-workout bottle, and an evening refill as fixed cues for better hydration and appetite awareness.</p>
+            </article>
+            <article class="info-card coral">
+              <h3>Repeatable Deficit</h3>
+              <p>Aim for small calorie reductions you can repeat for weeks rather than dramatic cuts that compromise training consistency.</p>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section id="audio" class="panel audio-panel">
+        <div class="section-heading">
+          <p class="eyebrow">Audio guidance</p>
+          <h2>Calm background sound with quick spoken coaching prompts.</h2>
+          <p class="supporting">
+            The ambient layer is generated in your browser, and the guidance buttons use built-in speech synthesis when available.
+          </p>
+        </div>
+
+        <div class="audio-controls glass">
+          <div>
+            <p class="audio-status-label">Ambient player</p>
+            <h3 id="ambient-heading">Hydra calm flow is paused</h3>
+            <p id="ambient-status">Tap play to start calm background audio.</p>
+          </div>
+
+          <div class="button-row">
+            <button type="button" class="primary-action button-action" id="ambient-toggle">
+              Play background flow
+            </button>
+            <button type="button" class="secondary-action button-action" id="guidance-stop">
+              Stop spoken guidance
+            </button>
+          </div>
+        </div>
+
+        <div class="track-grid">
+          <article class="track-card glass">
+            <div class="track-topline">
+              <span>0:22</span>
+              <span>Voice cue</span>
+            </div>
+            <h3>Warm-Up Coaching</h3>
+            <p>Roll your shoulders back, breathe in for four, and let your first five minutes feel smooth rather than rushed.</p>
+            <button
+              type="button"
+              class="track-button guidance-trigger"
+              data-title="Warm-Up Coaching"
+              data-cue="Roll your shoulders back, breathe in for four, and let your first five minutes feel smooth rather than rushed."
+            >
+              Play guidance
+            </button>
+          </article>
+
+          <article class="track-card glass">
+            <div class="track-topline">
+              <span>0:18</span>
+              <span>Voice cue</span>
+            </div>
+            <h3>Mid-Workout Focus</h3>
+            <p>Keep your ribs stacked, exhale through the effort, and choose clean reps over chasing fatigue.</p>
+            <button
+              type="button"
+              class="track-button guidance-trigger"
+              data-title="Mid-Workout Focus"
+              data-cue="Keep your ribs stacked, exhale through the effort, and choose clean reps over chasing fatigue."
+            >
+              Play guidance
+            </button>
+          </article>
+
+          <article class="track-card glass">
+            <div class="track-topline">
+              <span>0:20</span>
+              <span>Voice cue</span>
+            </div>
+            <h3>Evening Reset</h3>
+            <p>Slow the pace, lengthen your breath, and close the day with a walk or gentle stretch to downshift stress.</p>
+            <button
+              type="button"
+              class="track-button guidance-trigger"
+              data-title="Evening Reset"
+              data-cue="Slow the pace, lengthen your breath, and close the day with a walk or gentle stretch to downshift stress."
+            >
+              Play guidance
+            </button>
+          </article>
+        </div>
+
+        <p class="current-track">Current guidance: <strong id="current-track">No guidance playing</strong></p>
+      </section>
+
+      <section class="bottom-grid">
+        <article class="panel section-card">
+          <div class="section-heading">
+            <p class="eyebrow">Daily flow</p>
+            <h2>A practical sequence for feeling lighter, stronger, and more consistent.</h2>
+          </div>
+          <ol class="flow-list">
+            <li>Wake up with water, daylight, and five slow breaths before caffeine.</li>
+            <li>Train with one clear focus: strength, cardio, or mobility.</li>
+            <li>Anchor meals to protein and produce before adding extras.</li>
+            <li>Use the audio reset in the evening to avoid stress-driven snacking.</li>
+          </ol>
+        </article>
+
+        <article class="panel section-card">
+          <div class="section-heading">
+            <p class="eyebrow">Why it works</p>
+            <h2>Hydra keeps motivation visual and turns support into something you can actually reuse.</h2>
+          </div>
+          <div class="quote-stack">
+            <blockquote>Hydra turns healthy choices into a visual routine that feels light instead of strict.</blockquote>
+            <blockquote>The built-in audio cues make it easier to keep momentum without constantly checking a plan.</blockquote>
+            <blockquote>Everything on one page means I can reset my day in under two minutes.</blockquote>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
