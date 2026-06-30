@@ -1,0 +1,137 @@
+<main class="page-shell">
+  <section class="hero panel">
+    <div class="hero-copy">
+      <p class="eyebrow">Hydra wellness studio</p>
+      <h1>
+        Colourful
+        <span>workout guidance</span>
+        for steady strength and weight-loss rhythm.
+      </h1>
+      <p class="lede">
+        Hydra combines approachable training structure, realistic nutrition support,
+        and calming audio rituals so your routine feels energised instead of overwhelming.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#guidance" class="primary-action">Explore guidance</a>
+        <a href="#audio" class="secondary-action">Start audio reset</a>
+      </div>
+
+      <div class="stat-row">
+        <article class="stat" *ngFor="let stat of stats">
+          <strong>{{ stat.value }}</strong>
+          <span>{{ stat.label }}</span>
+        </article>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="hero-card glass">
+        <span class="hero-card-label">Daily Hydra flow</span>
+        <h2>Move with intention. Eat with clarity. Recover with calm.</h2>
+        <ul>
+          <li>Strength circuits with mobility built in</li>
+          <li>Weight-loss tips grounded in repeatable habits</li>
+          <li>Audio guidance for focus and recovery</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="guidance" class="content-grid">
+    <article class="panel section-card">
+      <div class="section-heading">
+        <p class="eyebrow">Workout guidance</p>
+        <h2>Training pillars that keep progress visible and sustainable.</h2>
+      </div>
+      <div class="card-stack">
+        <article class="info-card" *ngFor="let card of workoutCards" [ngClass]="card.accent">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.detail }}</p>
+        </article>
+      </div>
+    </article>
+
+    <article class="panel section-card">
+      <div class="section-heading">
+        <p class="eyebrow">Weight-loss tips</p>
+        <h2>Simple nutrition habits that support energy while trimming excess.</h2>
+      </div>
+      <div class="card-stack">
+        <article class="info-card" *ngFor="let card of nutritionCards" [ngClass]="card.accent">
+          <h3>{{ card.title }}</h3>
+          <p>{{ card.detail }}</p>
+        </article>
+      </div>
+    </article>
+  </section>
+
+  <section id="audio" class="panel audio-panel">
+    <div class="section-heading">
+      <p class="eyebrow">Audio guidance</p>
+      <h2>Calm background sound with quick spoken coaching prompts.</h2>
+      <p class="supporting">
+        The ambient layer is generated in your browser, and the guidance buttons use built-in speech synthesis when available.
+      </p>
+    </div>
+
+    <div class="audio-controls glass">
+      <div>
+        <p class="audio-status-label">Ambient player</p>
+        <h3>{{ ambientPlaying ? 'Hydra calm flow is live' : 'Hydra calm flow is paused' }}</h3>
+        <p>{{ ambientStatus }}</p>
+      </div>
+
+      <div class="button-row">
+        <button type="button" class="primary-action button-action" (click)="toggleAmbient()">
+          {{ ambientPlaying ? 'Pause background flow' : 'Play background flow' }}
+        </button>
+        <button type="button" class="secondary-action button-action" (click)="stopGuidance()">
+          Stop spoken guidance
+        </button>
+      </div>
+    </div>
+
+    <div class="track-grid">
+      <article class="track-card glass" *ngFor="let track of guidanceTracks">
+        <div class="track-topline">
+          <span>{{ track.duration }}</span>
+          <span>Voice cue</span>
+        </div>
+        <h3>{{ track.title }}</h3>
+        <p>{{ track.cue }}</p>
+        <button type="button" class="track-button" (click)="playGuidance(track)">
+          Play guidance
+        </button>
+      </article>
+    </div>
+
+    <p class="current-track">Current guidance: <strong>{{ currentTrackTitle }}</strong></p>
+  </section>
+
+  <section class="bottom-grid">
+    <article class="panel section-card">
+      <div class="section-heading">
+        <p class="eyebrow">Daily flow</p>
+        <h2>A practical sequence for feeling lighter, stronger, and more consistent.</h2>
+      </div>
+      <ol class="flow-list">
+        <li *ngFor="let step of flowSteps">{{ step }}</li>
+      </ol>
+    </article>
+
+    <article class="panel section-card">
+      <div class="section-heading">
+        <p class="eyebrow">Why it works</p>
+        <h2>Hydra keeps motivation visual and turns support into something you can actually reuse.</h2>
+      </div>
+      <div class="quote-stack">
+        <blockquote *ngFor="let quote of testimonials">
+          {{ quote }}
+        </blockquote>
+      </div>
+    </article>
+  </section>
+</main>
